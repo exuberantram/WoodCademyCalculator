@@ -3,6 +3,7 @@ Simple calculator app built in AndroidStudio to help calculate board price per f
 
 ## Contributions
 @Actony25
+
 Ralph Bagnall, woodcademy.com
 
 ## License
