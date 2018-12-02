@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- woodcademy logo, directs user to woodcademy.com on click-->
+    <ImageButton
+        android:id="@+id/wclogo"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/wc_image"
+        app:srcCompat="@drawable/woodcademy85ppi" />
+
+    <!--display "running total"-->
+    <TextView
+        android:id="@+id/woodtot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="146dp"
+        android:text="@string/RunTot"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <!-- display "Total price"-->
+    <TextView
+        android:id="@+id/pricetot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/woodtot"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="221dp"
+        android:text="@string/totprice"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <!--display calculated wood running total-->
+    <TextView
+        android:id="@+id/displayWood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/addWidth"
+        android:layout_alignTop="@+id/woodtot"
+        android:text="#"
+        android:textSize="24sp" />
+
+    <!--display calculated price of wood-->
+    <TextView
+        android:id="@+id/displayPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/displayWood"
+        android:layout_alignTop="@+id/pricetot"
+        android:text="#"
+        android:textSize="24sp" />
+
+    <!-- brings user to wc_add_width on click-->
+    <Button
+        android:id="@+id/addWidth"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="279dp"
+        android:text="@string/addwidth" />
+
+    <!-- brigns user to wc_price_per_foot on click-->
+    <Button
+        android:id="@+id/changePrice"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="201dp"
+        android:text="@string/changeprice" />
+
+    <!--brings user to wc_thickness_length on click-->
+    <Button
+        android:id="@+id/startOver"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:text="@string/restart" />
+
+    <!-- brings user to wc_pile on click-->
+    <Button
+        android:id="@+id/returnToPile"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="127dp"
+        android:text="@string/gotopile" />
+
+
+</RelativeLayout>

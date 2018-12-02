@@ -17,7 +17,6 @@
     <string name="totprice">Total Price</string>
     <string name="changeprice">Change Price</string>
     <string name="restart">Start Over</string>
-    <string name="pilereturn">Return to Pile</string>
     <string name="woodcademy">Woodcademy</string>
     <string name="bys">Build Your Skills</string>
     <string name="pg1explain">Enter the board thickness and length</string>
@@ -29,6 +28,7 @@
     <string name="tapadd">and tap "Add to Pile".</string>
     <string name="thencont">When done, tap "Go to Pile"</string>
     <string name="conttot">Tap Calculate to view your total for this pile</string>
+    <string name="addwidth">Add Width</string>
 
     <!-- user input strings-->
     <string name="tinput"></string>
