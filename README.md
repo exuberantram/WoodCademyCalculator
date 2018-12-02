@@ -2,7 +2,8 @@
 Simple calculator app built in AndroidStudio to help calculate board price per foot at lumber yards
 
 ## Contributions
-
+@Actony25
+Ralph Bagnall, woodcademy.com
 
 ## License
 Copyright 2018 Victoria Bagnall
