@@ -1,0 +1,51 @@
+<resources>
+    <string name="appname">WoodCalculator</string>
+    <string name="wc_image">WoodCademy Logo</string>
+    <string name="cont">Continue</string>
+    <string name="calc">Calculate</string>
+    <string name="addpile">Add to Pile</string>
+    <string name="thick">Thickness:</string>
+    <string name="length">Length:</string>
+    <string name="width">Width:</string>
+    <string name="wc">WoodCademy</string>
+    <string name="RunTot">Running Total</string>
+    <string name="boardft">Price per Board Foot</string>
+    <string name="dim">Dimension</string>
+    <string name="goback">Go Back</string>
+    <string name="calcPrice">Calculate Price</string>
+    <string name="totwood">Total Wood</string>
+    <string name="totprice">Total Price</string>
+    <string name="changeprice">Change Price</string>
+    <string name="restart">Start Over</string>
+    <string name="pilereturn">Return to Pile</string>
+    <string name="woodcademy">Woodcademy</string>
+    <string name="bys">Build Your Skills</string>
+    <string name="pg1explain">Enter the board thickness and length</string>
+    <string name="inquarterin">Thickness is in quarter inches</string>
+    <string name="nextw">Press continue to enter the board widths</string>
+    <string name="gotopile">Go to Pile</string>
+    <string name="pile">Your Pile</string>
+    <string name="widthinstr">Enter each board width individually,</string>
+    <string name="tapadd">and tap "Add to Pile".</string>
+    <string name="thencont">When done, tap "Go to Pile"</string>
+
+    <!-- user input strings-->
+    <string name="tinput"></string>
+    <string name="linput"></string>
+    <string name="winput"></string>
+    <string name="ftinput"></string>
+
+
+    <!-- an array with 7 popular hard woods
+    meant for drop-down list-->
+    <string-array name="woodtypes">
+        <item>Beech</item>
+        <item>Ash</item>
+        <item>Oak</item>
+        <item>Mahogany</item>
+        <item>Maple</item>
+        <item>Walnut</item>
+        <item>Pine</item>
+    </string-array>
+
+</resources>

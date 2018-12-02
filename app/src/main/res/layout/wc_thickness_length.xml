@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/relativeLayout">
+
+    <!-- Button to enter thickness and length-->
+    <!-- when pressed, will continue to page to enter width-->
+
+    <Button
+        android:id="@+id/calcButton1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="@string/cont"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="600dp" />
+
+    <!-- ImageButton feat. woodcademy logo-->
+    <!-- when clicked, will lead to woodcademy home page-->
+    <ImageButton
+        android:id="@+id/woodcademyFull"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/wc_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/woodcademy85ppi" />
+
+    <!--text to prompt the user to enter the thickness of the board-->
+    <TextView
+        android:id="@+id/thick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="255dp"
+        android:gravity="right"
+        android:text="@string/thick"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:fontFamily="@font/archivo_black" />
+
+    <!-- text to prompt the user to enter the length of the board-->
+    <TextView
+        android:id="@+id/length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/thick"
+        android:layout_alignRight="@id/thick"
+        android:layout_below="@+id/thick"
+        android:gravity="right"
+        android:text="@string/length"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:fontFamily="@font/archivo_black" />
+
+    <!-- where user enters value for thickness-->
+    <EditText
+        android:id="@+id/enterThick"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/calcButton1"
+        android:layout_alignTop="@+id/thick"
+        android:ems="10"
+        android:inputType="number" />
+
+    <!-- where user enters value for length-->
+    <EditText
+        android:id="@+id/enterLength"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/calcButton1"
+        android:layout_below="@+id/thick"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151dp"
+        android:text="@string/pg1explain"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="192dp"
+        android:text="@string/inquarterin"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:text="@string/nextw"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
