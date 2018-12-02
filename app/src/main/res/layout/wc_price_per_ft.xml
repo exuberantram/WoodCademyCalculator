@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- woodcademy logo, directs user to woodcademy.com on click-->
+    <ImageButton
+        android:id="@+id/wclogo"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/wc_image"
+        app:srcCompat="@drawable/woodcademy85ppi" />
+
+    <TextView
+        android:id="@+id/RunningTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/boardPrice"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="144dp"
+        android:text="@string/RunTot"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/printTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/enterPrice"
+        android:layout_alignTop="@+id/RunningTotal"
+        android:text="#"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/boardPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="233dp"
+        android:text="@string/boardft"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/enterPrice"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/boardPrice"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="57dp"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>

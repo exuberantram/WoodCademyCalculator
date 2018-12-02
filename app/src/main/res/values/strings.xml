@@ -9,7 +9,7 @@
     <string name="width">Width:</string>
     <string name="wc">WoodCademy</string>
     <string name="RunTot">Running Total</string>
-    <string name="boardft">Price per Board Foot</string>
+    <string name="boardft">Price per Board Ft</string>
     <string name="dim">Dimension</string>
     <string name="goback">Go Back</string>
     <string name="calcPrice">Calculate Price</string>
@@ -28,6 +28,7 @@
     <string name="widthinstr">Enter each board width individually,</string>
     <string name="tapadd">and tap "Add to Pile".</string>
     <string name="thencont">When done, tap "Go to Pile"</string>
+    <string name="conttot">Tap Calculate to view your total for this pile</string>
 
     <!-- user input strings-->
     <string name="tinput"></string>
@@ -46,6 +47,7 @@
         <item>Maple</item>
         <item>Walnut</item>
         <item>Pine</item>
+        <item>Other</item>
     </string-array>
 
 </resources>

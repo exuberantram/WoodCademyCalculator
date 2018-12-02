@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- button to add width to pile-->
+    <!-- button to add width to wc_pile-->
     <Button
         android:id="@+id/button"
         android:layout_width="200dp"
@@ -80,7 +80,7 @@
         android:ems="10"
         android:inputType="number" />
 
-    <!-- button to take user to pile-->
+    <!-- button to take user to wc_pile-->
     <Button
         android:id="@+id/button2"
         android:layout_width="200dp"
