@@ -6,11 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
     Button button;
+    public EditText tNum;
+    public EditText lNum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                tNum = (EditText)findViewById(R.id.enterThick);
+                lNum = (EditText)findViewById(R.id.enterLength);
                 startActivity(new Intent(MainActivity.this, wcAddWidth.class));
             }
         });
