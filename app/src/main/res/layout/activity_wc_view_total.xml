@@ -13,7 +13,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:contentDescription="@string/wc_image"
-        app:srcCompat="@drawable/woodcademy85ppi" />
+        app:srcCompat="@drawable/woodcademyfull" />
 
     <!--display "running total"-->
     <TextView

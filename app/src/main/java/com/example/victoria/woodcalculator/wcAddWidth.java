@@ -16,8 +16,8 @@ public class wcAddWidth extends AppCompatActivity {
     public EditText lNum;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
         setContentView(R.layout.activity_wc_add_width);
         addListenerOnButton();
     }

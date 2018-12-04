@@ -8,12 +8,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     Button button;
     public EditText tNum;
     public EditText lNum;
+    public TextView tOut;
+    public TextView lOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     public void addListenerOnButton() {
 
         //creates a listener that sends the user to AddWidth on click
+        //also "saves" the length and thickness values input as a string
         Button btn = findViewById(R.id.calcButton1);
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 tNum = (EditText)findViewById(R.id.enterThick);
                 lNum = (EditText)findViewById(R.id.enterLength);
+                tOut = (TextView)findViewById(R.id.userthick);
+                lOut = (TextView)findViewById(R.id.userlength);
+                tNum.setText(tOut.getText().toString());
+                lNum.setText(lOut.getText().toString());
                 startActivity(new Intent(MainActivity.this, wcAddWidth.class));
             }
         });
