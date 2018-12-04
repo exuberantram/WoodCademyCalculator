@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".Pile" />
         <activity android:name=".wcAddWidth" />
-        <activity android:name=".wcPile"></activity>
+        <activity android:name=".wcPile" />
+        <activity android:name=".wcBoardFoot" />
+        <activity android:name=".wcViewTotal"></activity>
     </application>
 
 </manifest>

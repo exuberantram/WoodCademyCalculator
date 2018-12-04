@@ -7,25 +7,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
-public class wcPile extends AppCompatActivity {
+public class wcBoardFoot extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wc_pile);
+        setContentView(R.layout.activity_wc_board_foot);
     }
 
     public void addListenerOnButton() {
 
         //creates a listener that sends the user to AddWidth on click
-        Button btn = findViewById(R.id.calcbutton2);
+        Button btn = findViewById(R.id.button3);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(wcPile.this, wcBoardFoot.class));
+                startActivity(new Intent(wcBoardFoot.this, wcViewTotal.class));
             }
         });
 
@@ -41,5 +40,4 @@ public class wcPile extends AppCompatActivity {
             }
         });
     }
-
 }
